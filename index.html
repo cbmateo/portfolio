@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateo Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9cf7e874f9.js" crossorigin="anonymous"></script>
+    
+
+</head>
+
+<body>
+
+<!------------------------H E A D E R------------------------>
+
+<div id="header">
+    <div class="container">
+        <nav class="stroke">
+            <img src="/img/logo.png" alt="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>             
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>          
+        </nav>
+
+    <div class="main_wrapper">
+        <div id="column1">                               
+            <h1>Hi, I'm <span>Brian Mateo</span></h1>
+            <h2>A Web Developer from the Philippines</h2>
+            <br>                
+            <a class="hire-me" href="#contact"><button>Hire Me!</button></a>          
+        </div>
+        <aside id="sidebar">
+            <img src="/img/sidebar_image.png" alt="profile-photo">          
+        </aside>  
+    </div>        
+    </div>   
+</div>
+
+<!---------------- A B O U T ------------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/img/pic2.jpg" alt="profile-photo-2">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a dynamic and motivated Information Technology professional and entrepreneur pursuing a Master's Degree in Information Technology with 2+ years of invaluable experience in website administration and 5+ years in digital marketing and business management. I have 2 and a half years experience as technical support representative for an international website hosting company. I believe that I could help you with your business given my educational background and work experience.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    <p class="tab-links"onclick="openTab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Website or Web App Interfaces</li>
+                        <li><span>Web Development</span><br>Website or Web App Development</li>
+                        <li><span>Website Administration</span><br>Website Maintenance and Troubleshooting</li>    
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2017-Current</span><br>Marketing Manager at <span>Sumerian Plumbing and Excavating Services</span></li>
+                        <li><span>2014-2017</span><br>Technical Support Representative(Website Hosting) at <span>1&1 By IONOS</span></li>                       
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-Present</span><br>Master in Information Technology at <span>Polytechnic University of the Philippines</span></li>
+                        <li><span>2010-2014</span><br>Bachelor of Science in Information Technology at <span>University of Cebu - Lapu-lapu And Mandaue</span></li>                                                                      
+                    </ul>
+                </div>        
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------P O R T F O L I O------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1><br>
+        <div class="work-list">
+            <div class="work">
+                <img src="/img/work-1.png">
+                <div class="layer">
+                    <h3>Wordpress Website</h3>
+                    <p>A website that I created for our company Sumerian Plumbing and Excavating Services.</p>
+                    <a href="http://www.malabananpro.com/" target=_blank><i class="fa-solid fa-up-right-from-square"></i></a> 
+                </div>
+            </div>
+            <div class="work">
+                <img src="/img/work-2.png">
+                <div class="layer">
+                    <h3>Customer Management System</h3>
+                    <p>A Customer Management System that I created for our company Sumerian Plumbing and Excavating Services.</p>
+                    <a href="http://www.malabananpro.com/" target=_blank><i class="fa-solid fa-up-right-from-square"></i></a> 
+                </div>
+            </div>
+            <div class="work">
+                <img src="/img/work-3.png">
+                <div class="layer">
+                    <h3>Marketing Management</h3>
+                    <p>I handle all the digital marketing side of our company. </p>
+                    <a href="http://www.malabananpro.com/" target=_blank><i class="fa-solid fa-up-right-from-square"></i></a> 
+                </div>
+            </div>           
+        </div>
+        <!-- <a href="#" class="btn">See More</a> -->
+    </div>
+</div>
+
+<!----------------------------C O N T A C T-------------------------->
+<div id="contact">
+    <div class="container">
+        <div class ='row'>
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-location-dot"></i>  Metro Manila, Philippines</p>
+                <p><i class="fa-solid fa-paper-plane"></i>  chrisbrianmatts@gmail.com</p>
+                <p><i class="fa-solid fa-mobile-screen"></i>  +63917 438 8610</p>
+             
+                <p><i class="fa-brands fa-viber"></i>  +63917 438 8610</p>
+                                
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/chrisbrianmatts/" target=_blank><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/christopherbrianmateo/" target=_blank><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/cbmateo" target=_blank><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="img/my-cv.pdf" download class="btn btn2">Download CV</a>
+            
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>                
+                <span id="msg"></span>
+            </div>   
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright by © Brian Mateo Design</p>
+
+    </div>
+</div>
+<!----------------J A V A S C R I P T------------------->
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function openTab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link');
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab')
+ }
+</script>
+
+<script>
+    var sidemenu = document.getElementById('sidemenu');
+
+    function openMenu(){
+        sidemenu.style.right = "0";
+    }
+    function closeMenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxinA73GDN_9bZqyNIB-nlY2tujR1CY5oS6Vn7WE8vqkhZyPaTE2cAXMmKu7xLZMXX6/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+
+</body>
+</html>
